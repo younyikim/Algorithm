@@ -1,5 +1,7 @@
 # Stack
 
+[1. Stack의 특징](#Stack의-특징)  
+
 Stack은 '쌓다', '더미'의 의미를 가진다.
 `LIFO`(Last In First Out) 의 형태를 가진다.    
 
