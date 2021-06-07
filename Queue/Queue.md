@@ -9,7 +9,7 @@
 	- [peek() method](#peek-method) 
 	- [length(), isEmpty(), clear()](#length-isEmpty-clear)
 - [4. JavaScript로 Queue 구현하기](#JavaScript로-Queue-구현하기)
-- [5.Queue를 사용한 문제들 (백준)](#Queue를-사용-문제들-백준)   
+- [5. Queue를 사용하는 문제들 (백준)](#Queue를-사용-문제들-백준)   
 
 
 
