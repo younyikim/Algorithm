@@ -218,55 +218,43 @@ Stack의 기능으로 동작하고 싶을때는  `push()`와 `pop()`을 사용�
 하지만 Queue를 구현할때, `shift()`를 사용하면 배열의 첫번째 요소가 빠져나가기 때문에 모든 원소들을    
 앞으로 한칸씩 이동시켜야한다. 이때 `O(1)`의 시간만으로도 가능한 동작이, `O(N)`의 시간이 소요된다.    
 
-그래서 JavaScript로 구현할 때도 LinkedList로 구현하는 것이 바람직하다.
+그래서 JavaScript로 구현할 때도 LinkedList로 구현하는 것이 바람직하다.   
+아래의 코드는 ES6 OOP 형식으로 Queue를 구현하였다.   
+
 
 ```javascript
-class Node {
-  constructor(data) {
-    this.data = data;
-    this.next = null;
-  }
-}  
+import LinkedList from '../linked-list/LinkedList';
 
-class Queue {
+export default class Queue {
   constructor() {
-    this.head = null;
-    this.rear = null;
-    this.length = 0;
+    this.linkedList = new LinkedList();
   }
-  
-  // data 추가
-  enqueue(data) {
-    const node = new Node(data);
-    
-    if(!this.head){
-      this.head = node;
-     } else {
-       this.rear.next = node;
-     }
-     
-     this.rear = node;
-     this.length ++;
+
+  isEmpty() {
+    return !this.linkedList.tail;
   }
-  
-  // data 삭제 
-  dequeue() {
-    if(!this.head) {
-      return false;
+
+  peek() {
+    if (!this.linkedList.head) {
+      return null;
     }
-    
-    const data = this.head.data;
-    this.head = this.head.next;
-    this.length --;
-    
-    return data;
-   }
-   
-   // data 반환
-   peek() {
-    return this.head.data;
-   }
- } 
+
+    return this.linkedList.head.value;
+  }
+
+  enqueue(value) {
+    this.linkedList.append(value);
+  }
+
+  dequeue() {
+    const removedHead = this.linkedList.deleteHead();
+    return removedHead ? removedHead.value : null;
+  }
+
+  toString(callback) {
+    return this.linkedList.toString(callback);
+  }
+}
 ```    
 
 ### Queue를 사용하는 문제들 (백준)   
