@@ -1,6 +1,19 @@
 # Stack
 
-[1. Stack의 특징](#Stack의-특징)  
+- [1. Stack의 특징](#Stack의-특징)  
+- [2. Stack의 사용법(JAVA)](#Stack의-사용법JAVA)  
+- [3. Stack 구현(JAVA)](#Stack-구현JAVA)  
+	- [Stack Interface](#Stack-Interface) 
+	- [Stack Class 및 생성자](#Stack-Class-및-생성자) 
+	- [resize() method](#resize-method) 
+	- [push() method](#push-method) 
+	- [pop() method](#pop-method) 
+	- [peek() method](#peek-method) 
+	- [search() method](#search-method)
+	- [size(), empty(), clear() method](#size-empty-clear-method)
+- [4. JavaScript로 Stack 구현하기](#JavaScript로-Stack-구현하기)
+- [5.Stack을 사용한 문제들 (백준)](#Stack을-사용한-문제들-백준)   
+
 
 Stack은 '쌓다', '더미'의 의미를 가진다.
 `LIFO`(Last In First Out) 의 형태를 가진다.    
