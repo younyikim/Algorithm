@@ -9,6 +9,7 @@
   *    6) [remove() Method](#remove-Method)
   *    7) [get(), set(), indexOf(), contains() Method](#get-set-indexOf-contains-Method)
  
+---------------------------------------------------------------    
 
 
 * ArrayList와 LinkedList 모두 List에서 구현 방법만 달리했을 뿐 사용방법은 유사하다.  
