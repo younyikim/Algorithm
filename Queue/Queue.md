@@ -56,7 +56,7 @@ Java에서 Class로 구현된 Stack과는 달리, Queue 메모리는 별도의 i
 ------------------------------------------------
 
 ### LinkedList를 이용한 Queue 구현(JAVA)    
-[LinkedList에 대한 설명(추가 예정)]()
+[LinkedList에 대한 설명](https://github.com/younyikim/Algorithm/blob/main/LinkedList/LinkedList.md)
 
 연결리스트로 구현된 큐는 단일 연결리스트로 구현한다.  
 
